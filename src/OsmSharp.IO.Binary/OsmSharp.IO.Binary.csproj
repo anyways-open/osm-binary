@@ -3,7 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>OsmSharp.IO.Binary</AssemblyName>
     <PackageId>OsmSharp.IO.Binary</PackageId>
-    <PackageVersion>0.3.0-pre002</PackageVersion>
+    <PackageVersion>0.3.1-pre001</PackageVersion>
     <Title>OsmSharp.IO.Binary</Title>
     <Authors>Ben Abelshausen</Authors>
     <Description>A binary IO package for OsmSharp.</Description>
