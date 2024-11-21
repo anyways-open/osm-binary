@@ -37,7 +37,7 @@ namespace OsmSharp.IO.Binary
         /// <summary>
         /// Appends the header byte(s).
         /// </summary>
-        private static void AppendHeader(this Stream stream, OsmGeo osmGeo)
+        public static void AppendHeader(this Stream stream, OsmGeo osmGeo)
         {
             // build header containing type and nullable flags.
             byte header = 1; // a node.

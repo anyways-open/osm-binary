@@ -45,7 +45,7 @@ namespace OsmSharp.IO.Binary.Test.Functional
                 .CreateLogger();
 
             // download test data.
-            Download.ToFile("http://files.itinero.tech/data/OSM/planet/europe/luxembourg-latest.osm.pbf", "test.osm.pbf").Wait();
+            Download.ToFile("http://planet.anyways.eu/planet/europe/luxembourg/luxembourg-latest.osm.pbf", "test.osm.pbf").Wait();
 
             // test read/writing an existing OSM file.
             Log.Information("Testing write to OSM binary formatted file...");
@@ -143,11 +143,11 @@ namespace OsmSharp.IO.Binary.Test.Functional
             }
 
             using (var sourceStream = File.OpenRead("test3.osm.bin"))
-            using (var targetStream = File.Open("test2.osm.pbf", FileMode.Create))
+            using (var targetStream = File.Open("test2.osm", FileMode.Create))
             {
                 var source = new OsmSharp.Streams.BinaryOsmStreamSource(sourceStream);
 
-                var target = new OsmSharp.Streams.PBFOsmStreamTarget(targetStream);
+                var target = new OsmSharp.Streams.XmlOsmStreamTarget(targetStream);
                 target.RegisterSource(source);
                 target.Pull();
             }

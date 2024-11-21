@@ -6,7 +6,7 @@ An IO module on top of OsmSharp that reads/writes OSM data in a **custom binary 
 
 We built this because it more efficient compared to OSM-XML and has some advantages over OSM-PBF. This can be used to:
 
-- Read/write indivdual objects.
+- Read/write individual objects.
 - Read/write objects with negative ids
 - Read/write objects missing data (even missing ids, versions, etc.).
 - Can be streamed.

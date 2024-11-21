@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -22,6 +22,11 @@
     <None Remove="test-data\relation.osm.bin" />
     <None Remove="test-data\way.osm.bin" />
     <None Remove="test-data\all.osm.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="v0_1\test-data\data1.osm.bin" />
+    <EmbeddedResource Include="v0_1\test-data\data1.osm.bin" />
   </ItemGroup>
 
 </Project>
